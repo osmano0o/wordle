@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    color: white;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body{
+    background-color:#121213 ;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 73% 27%;
+    height: 91vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.head{
+    display: grid;
+    grid-template-columns: 100px 1fr 150px ;
+    border-bottom: 1px gray solid;
+}
+h1{
+    margin: 0;
+    font-weight: 700;
+    font-size: 50px;
+
+}
+.head .other-games{
+}
+.head .options{
+
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    }
+
+.empty{
+    position: relative;
+}
+.empty span{
+    display: none;
+    margin: 10px auto;
+    width: fit-content;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+}
+
+.empty ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 5px;
+    
+}
+.empty ul li{
+    border: 2px gray solid;
+    width: 62px;
+    height: 62px;
+    padding: 5px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.letters{
+    
+}
+
+.letters ul{
+    padding-top: 5px;
+    width: 480px;
+    height: 100%;
+    display: flex;
+    flex-flow: wrap;
+    gap: 4px;
+    justify-content: center;
+}
+.letters ul li{
+    color: white;
+    padding: 3px;
+    height: 58px;
+    width: 9%;
+    background-color: gray;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.l-m{
+    margin-left: 1px;
+}
+.letters ul > .enter{
+    width: 70px;
+}
+.letters ul > .delete{
+    width: 70px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
